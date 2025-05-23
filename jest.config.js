@@ -1,11 +1,9 @@
-/** @type {import('jest').Config} **/
 module.exports = {
-  preset: 'ts-jest',   // Use ts-jest to handle TypeScript files
+  preset: 'ts-jest',
   testEnvironment: 'node',
   transform: {
-    '^.+\\.(ts|tsx)$': 'ts-jest',  // Transform TypeScript files using ts-jest
+    '^.+\\.(ts|tsx)$': 'ts-jest',
   },
-  transformIgnorePatterns: [
-    '/node_modules/(?!ts-jest)',   // Ensure ts-jest files are transformed even if they are in node_modules
-  ],
+  transformIgnorePatterns: ['/node_modules/'],
+  testPathIgnorePatterns: ['/dist/', '/node_modules/', '/\.d\.ts$/'],  // Exclude .d.ts files
 };
