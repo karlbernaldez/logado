@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/badge/stackoverflow-Ask%20questions-blue.svg" alt="Stack Overflow">
   </a>
   <a href="https://www.npmjs.com/package/@adovelopers/logado">
-    <img src="https://badge.fury.io/js/ado-logger.svg" alt="npm version">
+    <img src="https://badge.fury.io/js/logado.svg" alt="npm version">
   </a>
   <a href="https://raw.githubusercontent.com/karlbernaldez/logado/main/LICENSE">
     <img src="https://img.shields.io/pypi/l/adolib.svg" alt="License">
@@ -24,11 +24,12 @@ A powerful, production-grade, file-capable, and color-coded logger for Node.js.
 - **Source code:** https://github.com/adovelopers/logado
   
 # LogAdo
-**LogAdo** is a collection of small but helpful tools designed to make life easier for new Python developers. Whether you're just learning the language or building your first projects, AdoLib gives you lightweight, no-nonsense utilities like easy logging, formatting, and more — all in a beginner-friendly way.
+
+**LogAdo** is a collection of small but helpful tools designed to make life easier for new **JavaScript** developers. Whether you're just learning the language or building your first projects, **LogAdo** provides lightweight, no-nonsense utilities like easy logging, formatting, and more — all in a beginner-friendly way.
 
 ---
 
-## 🔧 Why use ado-logger?
+## 🔧 Why use logado?
 - ✅ Supports **8 log levels**
 - ✅ Configurable **log level filtering**
 - ✅ **File output** for persistent logs
@@ -48,7 +49,7 @@ npm i @adovelopers/logado
 ## 📘 Usage Example
 
 ```javascript
-import { createLogger } from 'ado-logger';
+import { createLogger } from '@adovelopers/logado';
 
 const logger = createLogger();
 
@@ -156,8 +157,8 @@ If the file doesn’t exist, it will be created.
 
 ## 📍 Links
 
-- [NPM Package](https://www.npmjs.com/package/ado-logger)
-- [GitHub Repo](https://github.com/adovelopers/ado-logger)
+- [NPM Package](https://www.npmjs.com/package/@adovelopers/logado)
+- [GitHub Repo](https://github.com/karlbernaldez/logado)
 
 ---
 
