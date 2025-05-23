@@ -2,9 +2,20 @@
 <img src="https://raw.githubusercontent.com/karlbernaldez/logado/main/logado.png" width="300">
 </h1><br>
 
-
-[![npm version](https://badge.fury.io/js/ado-logger.svg)](https://www.npmjs.com/package/@adovelopers/logado)  
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+<p align="center">
+  <a href="https://your-site.com">
+    <img src="https://img.shields.io/badge/powered%20by-Adovelopers-orange.svg?style=flat&colorA=E1523D&colorB=007D8A" alt="Powered by Adovelopers">
+  </a>
+  <a href="https://stackoverflow.com/questions/tagged/logado">
+    <img src="https://img.shields.io/badge/stackoverflow-Ask%20questions-blue.svg" alt="Stack Overflow">
+  </a>
+  <a href="https://www.npmjs.com/package/@adovelopers/logado">
+    <img src="https://badge.fury.io/js/ado-logger.svg" alt="npm version">
+  </a>
+  <a href="https://raw.githubusercontent.com/karlbernaldez/logado/main/LICENSE">
+    <img src="https://img.shields.io/pypi/l/adolib.svg" alt="License">
+  </a>
+</p>
 
 A powerful, production-grade, file-capable, and color-coded logger for Node.js.
 
@@ -141,7 +152,7 @@ If the file doesn’t exist, it will be created.
 
 ## 📜 License
 
-[© Adovelopers](https://www.npmjs.com/package/ado-logger)
+[© Adovelopers](https://raw.githubusercontent.com/karlbernaldez/logado/main/LICENSE)
 
 ---
 
