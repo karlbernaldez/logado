@@ -5,7 +5,6 @@
 
 
 [![npm version](https://badge.fury.io/js/ado-logger.svg)](https://www.npmjs.com/package/@adovelopers/logado)  
-[![Build Status](https://github.com/karlbernaldez/ado-logger/actions/workflows/test.yml/badge.svg)](https://github.com/karlbernaldez/ado-logger/actions)  
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A powerful, production-grade, file-capable, and color-coded logger for Node.js.
