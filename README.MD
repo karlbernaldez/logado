@@ -3,7 +3,6 @@
 </h1><br>
 
 
-
 [![npm version](https://badge.fury.io/js/ado-logger.svg)](https://www.npmjs.com/package/@adovelopers/logado)  
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -13,7 +12,6 @@ A powerful, production-grade, file-capable, and color-coded logger for Node.js.
 - **Documentation:** https://adovelopers.com/nodejs/packages/logado/docs
 - **Source code:** https://github.com/adovelopers/logado
   
-
 # LogAdo
 
 **LogAdo** is a collection of small but helpful tools designed to make life easier for new Python developers. Whether you're just learning the language or building your first projects, AdoLib gives you lightweight, no-nonsense utilities like easy logging, formatting, and more — all in a beginner-friendly way.
@@ -33,7 +31,8 @@ A powerful, production-grade, file-capable, and color-coded logger for Node.js.
 ## 📦 Installation
 
 ```bash
-npm install ado-logger
+npm i @adovelopers/logado
+```
 
 ---
 
@@ -47,6 +46,7 @@ const logger = createLogger();
 logger.info('Server started');
 logger.warn('Memory usage is high');
 logger.error('Failed to connect to database');
+```
 
 ---
 
@@ -67,18 +67,13 @@ You can set a minimum log level to control what gets printed.
 
 Example:
 
-```typescript
+```javascript
 const logger = createLogger({ level: 'warn' });
 logger.info('Will NOT be shown');
 logger.warn('This will be shown');
+```
 
 ---
-
-## 🛠️ API
-
-### `createLogger(options: LoggerOptions): Logger`
-
-Creates a new logger instance.
 
 #### LoggerOptions
 
@@ -94,7 +89,7 @@ Creates a new logger instance.
 
 Each log level has its own method:
 
-```typescript
+```javascript
 logger.error("Fatal error occurred");
 logger.warn("Low disk space");
 logger.notice("User account created");
@@ -103,9 +98,11 @@ logger.info("Starting application");
 logger.verbose("Loaded 3 modules");
 logger.silly("Variable x = 42");
 You can also use the generic .log(level, message) method:
+```
 
-```typescript
+```javascript
 logger.log("error", "This is equivalent to logger.error()");
+```
 
 ---
 ## 📁 File Logging
