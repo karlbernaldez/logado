@@ -1,6 +1,3 @@
-import fs from "fs";
-import path from "path";
-
 export type LogLevel =
   | "silent"
   | "error"
@@ -23,31 +20,25 @@ const LEVELS: Record<LogLevel, number> = {
 };
 
 const COLORS: Record<string, string> = {
-  error: "\x1b[31m",
-  warn: "\x1b[33m",
-  notice: "\x1b[35m",
-  http: "\x1b[34m",
-  info: "\x1b[36m",
-  verbose: "\x1b[90m",
-  silly: "\x1b[95m",
-  reset: "\x1b[0m",
+  error: "\x1b[31m",  // Red
+  warn: "\x1b[33m",   // Yellow
+  notice: "\x1b[35m", // Magenta
+  http: "\x1b[34m",   // Blue
+  info: "\x1b[36m",   // Cyan
+  verbose: "\x1b[90m",// Gray
+  silly: "\x1b[95m",  // Light Magenta
+  reset: "\x1b[0m",   // Reset color
 };
 
 export interface LoggerOptions {
   level?: LogLevel;
-  logToFile?: boolean;
-  logFilePath?: string;
 }
 
 export class Logger {
   private level: LogLevel;
-  private logToFile: boolean;
-  private logFilePath: string;
 
   constructor(options: LoggerOptions = {}) {
     this.level = options.level ?? "info";
-    this.logToFile = options.logToFile ?? false;
-    this.logFilePath = options.logFilePath ?? path.join(__dirname, "../ado.log");
   }
 
   private shouldLog(level: LogLevel): boolean {
@@ -59,17 +50,9 @@ export class Logger {
     const color = COLORS[level] || COLORS.info;
     const formatted = `[${timestamp}] [${level.toUpperCase()}] ${message}`;
 
+    // Only log if the level is appropriate
     if (this.shouldLog(level)) {
       console.log(`${color}${formatted}${COLORS.reset}`);
-    }
-
-    if (this.logToFile) {
-      const dir = path.dirname(this.logFilePath);
-      if (!fs.existsSync(dir)) {
-        fs.mkdirSync(dir, { recursive: true });
-      }
-
-      fs.appendFileSync(this.logFilePath, formatted + "\n");
     }
   }
 
