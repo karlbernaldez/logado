@@ -114,6 +114,7 @@ const logger = createLogger({
   logToFile: true,
   logFilePath: "./logs/output.log"
 });
+```
 
 If the file doesn’t exist, it will be created.
 
