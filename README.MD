@@ -24,13 +24,11 @@ A powerful, production-grade, file-capable, and color-coded logger for Node.js.
 - **Source code:** https://github.com/adovelopers/logado
   
 # LogAdo
-
 **LogAdo** is a collection of small but helpful tools designed to make life easier for new Python developers. Whether you're just learning the language or building your first projects, AdoLib gives you lightweight, no-nonsense utilities like easy logging, formatting, and more — all in a beginner-friendly way.
 
 ---
 
 ## 🔧 Why use ado-logger?
-
 - ✅ Supports **8 log levels**
 - ✅ Configurable **log level filtering**
 - ✅ **File output** for persistent logs
