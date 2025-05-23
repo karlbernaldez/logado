@@ -1,4 +1,4 @@
-import createLogger from "../../index";
+import createLogger from "../index";
 import fs from "fs";
 import path from "path";
 

@@ -10,5 +10,5 @@
     "moduleResolution": "node",    // Use Node module resolution
     "types": ["node", "jest"]      // Include Jest and Node.js types
   },
-  "include": ["src", "index.ts", "src/__tests__"]  // Include source and test files
+  "include": ["src", "src/index.ts", "src/__tests__"]  // Include source and test files
 }

@@ -1,4 +1,4 @@
-import { Logger, LoggerOptions } from "./src/logger";
+import { Logger, LoggerOptions } from "./logger";
 
 export default function createLogger(options: LoggerOptions = {}): Logger {
   return new Logger(options);
