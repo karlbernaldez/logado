@@ -29,8 +29,15 @@ jobs:
     - name: Run tests
       run: npm test
 
-    # Step 5: Publish to npm
+    # Step 5: Check if the version already exists in npm
+    - name: Check if version exists on npm
+      run: |
+        VERSION=$(node -p "require('./package.json').version")
+        npm info @adovelopers/logado@$VERSION || echo "Version not published"
+
+    # Step 6: Publish to npm if the version does not exist
     - name: Publish to npm
-      run: npm publish --access public  # Ensure access is set to public for public packages
+      if: success() && steps.check_version.outputs.version != 'Version not published'
+      run: npm publish --access public
       env:
-        NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}  # Use npm authentication token from GitHub secrets
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}  # Use npm authentication token from GitHub secrets
