@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "CommonJS",
-    "outDir": "dist",
-    "rootDir": ".",
-    "declaration": true,
-    "strict": true,
-    "esModuleInterop": true,
-    "moduleResolution": "node",
-    "types": ["node"]
+    "target": "ES2020",            // Set JavaScript version
+    "module": "CommonJS",          // Jest uses CommonJS by default
+    "outDir": "./dist",            // Compiled files go to the 'dist' folder
+    "rootDir": "./src",            // Source code is in the 'src' folder
+    "declaration": true,           // Generate declaration files
+    "strict": true,                // Enable strict type-checking
+    "esModuleInterop": true,       // Ensure compatibility with commonjs modules
+    "moduleResolution": "node",    // Use Node module resolution
+    "types": ["node", "jest"]      // Include Jest and Node.js types
   },
-  "include": ["src", "index.ts"]
+  "include": ["src", "src/index.ts", "src/__tests__"]  // Include source and test files
 }

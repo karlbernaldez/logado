@@ -25,7 +25,7 @@ A powerful, production-grade, file-capable, and color-coded logger for Node.js.
   
 # LogAdo
 
-**LogAdo** is a collection of small but helpful tools designed to make life easier for new **JavaScript** developers. Whether you're just learning the language or building your first projects, **LogAdo** provides lightweight, no-nonsense utilities like easy logging, formatting, and more all in a beginner-friendly way.
+**LogAdo** is a collection of small but helpful tools designed to make life easier for new **JavaScript** developers. Whether you're just learning the language or building your first projects, **LogAdo** provides lightweight utilities like easy logging, formatting, and more all in a beginner-friendly way.
 
 ---
 
