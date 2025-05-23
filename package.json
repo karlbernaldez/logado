@@ -1,6 +1,6 @@
 {
   "name": "@adovelopers/logado",
-  "version": "1.2.4",
+  "version": "1.1.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "A production-ready, colorful, log-level-aware Node.js logger built in TypeScript",
@@ -38,7 +38,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AdoVelopers/logado.git"
+    "url": "git+https://github.com/adovelopers/logado.git"
   },
   "bugs": {
     "url": "https://github.com/adovelopers/logado/issues"
@@ -58,6 +58,6 @@
     "node": ">=16.0.0"
   },
   "publishConfig": {
-     "registry": "https://npm.pkg.github.com/"
+    "access": "public"
   }
 }
