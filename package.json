@@ -1,6 +1,6 @@
 {
   "name": "@adovelopers/logado",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "A production-ready, colorful, log-level-aware Node.js logger built in TypeScript",
