@@ -1,0 +1,36 @@
+name: Publish to npm
+
+on:
+  push:
+    branches:
+      - main  # Trigger this workflow on push to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Run on the latest Ubuntu image
+
+    steps:
+    # Step 1: Checkout the code
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    # Step 2: Set up Node.js environment
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'  # Ensure Node.js version 16 or higher is used
+        registry-url: 'https://registry.npmjs.org/'  # npm registry URL
+
+    # Step 3: Install dependencies
+    - name: Install dependencies
+      run: npm install
+
+    # Step 4: Run tests (optional but recommended before publishing)
+    - name: Run tests
+      run: npm test
+
+    # Step 5: Publish to npm
+    - name: Publish to npm
+      run: npm publish --access public  # Ensure access is set to public for public packages
+      env:
+        NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}  # Use npm authentication token from GitHub secrets
