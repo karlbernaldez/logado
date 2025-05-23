@@ -1,10 +1,10 @@
 <h1 align="center">
-<img src="https://raw.githubusercontent.com/karlbernaldez/adolib/main/assets/adolib.png" width="300">
+<img src="https://raw.githubusercontent.com/karlbernaldez/logado/main/logado.png" width="300">
 </h1><br>
 
 
 
-[![npm version](https://badge.fury.io/js/ado-logger.svg)](https://www.npmjs.com/package/ado-logger)  
+[![npm version](https://badge.fury.io/js/ado-logger.svg)](https://www.npmjs.com/package/@adovelopers/logado)  
 [![Build Status](https://github.com/karlbernaldez/ado-logger/actions/workflows/test.yml/badge.svg)](https://github.com/karlbernaldez/ado-logger/actions)  
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
